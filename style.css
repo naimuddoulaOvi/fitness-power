@@ -44,9 +44,11 @@ header .logo {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: 0.15em; /* Adjust as needed */
+    letter-spacing: 0.3em; /* Adjust as needed */
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    height: 0%;
+}
+header .logo p {
+    font-size: 20px;
 }
 
 /* The typing effect */
@@ -79,6 +81,11 @@ nav li a {
     padding: 10px 15px;
     text-decoration: none;
     color: #fff;
+}
+nav li a:hover {
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"),
+        auto;
+    color: red;
 }
 
 /* Bannar Area */
@@ -119,6 +126,10 @@ nav li a {
     border: 1px solid gray;
     box-shadow: 2px 2px 4px gray;
     padding: 20px;
+}
+.features-area div:hover {
+    margin-top: -20px;
+    transition: 0.5s;
 }
 .features-area div img {
     width: 70px;
