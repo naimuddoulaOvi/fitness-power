@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size: 55px;
+}
+h3 {
+    font-size: 40px;
+}
+p {
+    line-height: 18px;
+}
+.red {
+    color: red;
+}
+.button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #5556da;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+header .logo {
+    color: white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    height: 0%;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    margin: 1% 10% 0 0;
+}
+nav li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Bannar Area */
+.banner {
+    display: flex;
+    padding: 0 5%;
+    background-color: black;
+}
+.banner-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60%;
+    color: white;
+}
+.banner-image {
+    width: 40%;
+}
+.banner-image img {
+    width: 110%;
+}
