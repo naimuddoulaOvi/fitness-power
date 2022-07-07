@@ -93,6 +93,9 @@ nav li a {
     width: 60%;
     color: white;
 }
+.banner-text p {
+    padding-right: 10%;
+}
 .banner-image {
     width: 40%;
 }
@@ -155,4 +158,37 @@ nav li a {
 .about-text ul {
     padding-left: 3%;
     padding-bottom: 3%;
+}
+
+/* Workout Inquiry */
+.workout-inquiry {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 48%;
+    height: 35vh;
+    background: url(img/bg.png) no-repeat center;
+    background-size: cover;
+    border-radius: 30px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+.workout-inquiry h3 {
+    font-size: 40px;
+}
+.workout-inquiry a {
+    padding: 12px 25px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #000;
+}
+.workout-inquiry a:hover {
+    background-color: blue;
+    color: white;
 }
